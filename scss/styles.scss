@@ -8,7 +8,7 @@ $green: #acb800;
 
 body {
   margin: 0;
-  height: 100vh;
+  min-height: 100vh;
   font-family: 'Kumbh Sans', sans-serif;
   display: flex;
   justify-content: center;
@@ -37,13 +37,24 @@ form {
     border-radius: 6px 0 0 6px;
   }
 
-  a {
+  a,
+  button {
     padding: 17px 17px 16.5px 17px;
     color: white;
     background-color: $green;
     text-decoration: none;
     margin-left: -10px;
     border-radius: 0 6px 6px 0;
+    outline: none;
+    border: none;
+
+    &:hover {
+      background-color: darken($green, $amount: 10%);
+    }
+
+    &:active {
+      background-color: $greens;
+    }
   }
 }
 
@@ -72,13 +83,14 @@ form {
     &:hover {
       font-weight: bold;
     }
-
-    &:nth-child(3) {
-      text-decoration: line-through;
-    }
   }
 
   li:not(:first-child) {
     border-top: 1px solid $green;
   }
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }
