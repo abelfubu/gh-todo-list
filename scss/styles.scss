@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
+
+$green: #acb800;
+
+:root {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: 'Kumbh Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  letter-spacing: 2px;
+  background-color: $green;
+  background-image: url('https://www.transparenttextures.com/patterns/argyle.png');
+  text-transform: uppercase;
+}
+
+form {
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: 0 2px 2px #23232350;
+  padding: 32px;
+  background-color: #ffffffbb;
+  color: darken($green, $amount: 20%);
+
+  input {
+    display: inline-block;
+    padding: 15px;
+    outline: none;
+    border: none;
+    border-radius: 6px 0 0 6px;
+  }
+
+  a {
+    padding: 17px 17px 16.5px 17px;
+    color: white;
+    background-color: $green;
+    text-decoration: none;
+    margin-left: -10px;
+    border-radius: 0 6px 6px 0;
+  }
+}
