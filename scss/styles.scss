@@ -53,7 +53,7 @@ form {
     }
 
     &:active {
-      background-color: $greens;
+      background-color: $green;
     }
   }
 }
@@ -92,5 +92,6 @@ form {
 
 a {
   color: white;
+  font-weight: bold;
   text-decoration: none;
 }
