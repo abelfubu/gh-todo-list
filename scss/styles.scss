@@ -95,3 +95,11 @@ a {
   font-weight: bold;
   text-decoration: none;
 }
+
+i {
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
